@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://8l3c7m8sa6cy"]
+
+[ext_resource type="Theme" uid="uid://c26vf8jgw5h8e" path="res://theme.tres" id="1_y7k74"]
+
+[node name="Title" type="MarginContainer" unique_id=627905547]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_y7k74")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=477454186]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="Play" type="Label" parent="VBoxContainer" unique_id=949991666]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Play"
+uppercase = true
+
+[node name="Spacer" type="Control" parent="VBoxContainer" unique_id=293221524]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="SpaceInvaders" type="Label" parent="VBoxContainer" unique_id=1393404450]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Space    Invaders"
+uppercase = true
+
+[node name="Spacer2" type="Control" parent="VBoxContainer" unique_id=867648856]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="ScoringTitle" type="Label" parent="VBoxContainer" unique_id=1098066030]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "*Score Advance Table*"
+uppercase = true
+
+[node name="MysteryRow" type="HBoxContainer" parent="VBoxContainer" unique_id=894891448]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MysteryRow" unique_id=829149284]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/MysteryRow" unique_id=42508906]
+layout_mode = 2
+text = "= ? Mystery"
+uppercase = true
+
+[node name="AlienRow1" type="HBoxContainer" parent="VBoxContainer" unique_id=108380332]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/AlienRow1" unique_id=891527517]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/AlienRow1" unique_id=2035209665]
+layout_mode = 2
+text = "= 30 Points"
+uppercase = true
+
+[node name="AlienRow2" type="HBoxContainer" parent="VBoxContainer" unique_id=1136306960]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/AlienRow2" unique_id=881521142]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/AlienRow2" unique_id=1161009976]
+layout_mode = 2
+text = "= 20 Points"
+uppercase = true
+
+[node name="AlienRow3" type="HBoxContainer" parent="VBoxContainer" unique_id=531752549]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/AlienRow3" unique_id=1499040074]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/AlienRow3" unique_id=461987738]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.14901961, 0.7647059, 0.05882353, 1)
+text = "= 10 Points"
+uppercase = true

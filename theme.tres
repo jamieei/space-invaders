@@ -4,4 +4,8 @@
 default_font_size = 32
 HBoxContainer/constants/separation = 30
 Label/font_sizes/font_size = 32
+MarginContainer/constants/margin_bottom = 85
+MarginContainer/constants/margin_left = 20
+MarginContainer/constants/margin_right = 20
+MarginContainer/constants/margin_top = 120
 VBoxContainer/constants/separation = 18
