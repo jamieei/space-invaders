@@ -6,3 +6,7 @@
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_80nbo")
+
+[node name="FakeDeathTimer" type="Timer" parent="." unique_id=18591803]
+
+[connection signal="timeout" from="FakeDeathTimer" to="." method="_on_player_died"]

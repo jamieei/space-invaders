@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://obeg3oaj64qk"]
 
 [ext_resource type="Texture2D" uid="uid://cqgmqn0tprrnv" path="res://assets/laser_canon.png" id="1_0bpsk"]
+[ext_resource type="Script" uid="uid://djhdy35fkxgpk" path="res://hud.gd" id="1_64ctp"]
 
 [node name="MarginContainer" type="MarginContainer" unique_id=997984330]
 anchors_preset = 15
@@ -12,6 +13,7 @@ theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
+script = ExtResource("1_64ctp")
 
 [node name="Player1Col" type="VBoxContainer" parent="." unique_id=1820950915]
 layout_mode = 2
@@ -68,7 +70,8 @@ horizontal_alignment = 1
 layout_mode = 2
 size_flags_vertical = 8
 
-[node name="LifeCount" type="Label" parent="BottomRow" unique_id=491362627]
+[node name="Lives" type="Label" parent="BottomRow" unique_id=491362627]
+unique_name_in_owner = true
 layout_mode = 2
 text = "3"
 

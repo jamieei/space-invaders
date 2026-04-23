@@ -2,6 +2,30 @@
 
 ## Scenes
 
+```mermaid
+---
+title: Screen Flow
+---
+stateDiagram-v2
+    Title : Title Screen
+    Game : Game Screen
+    
+    [*] --> Title
+    Title --> Game : Play
+    
+    state Game {
+        state Dead <<choice>>
+        state PlayAgain <<choice>>
+        [*] --> Level
+        Level --> Level : Cleared
+        Level --> Dead : Died
+        Dead --> Level : extra_lives > 0
+        Dead --> GameOver : extra_lives == 0
+        GameOver --> PlayAgain
+        PlayAgain --> Level : play again
+    }
+```
+
 - [ ] Title screen
 - [ ] Player / laser base
 - [ ] Aliens (3)
