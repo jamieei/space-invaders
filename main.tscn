@@ -4,8 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://obeg3oaj64qk" path="res://hud.tscn" id="2_h2yge"]
 [ext_resource type="Theme" uid="uid://c26vf8jgw5h8e" path="res://theme.tres" id="3_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://8l3c7m8sa6cy" path="res://title.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b50q6slyw6hhe" path="res://game.tscn" id="5_lquwl"]
 
-[node name="Main" type="CanvasLayer" unique_id=1965012890]
+[node name="Main" type="CanvasLayer" unique_id=875667484]
 script = ExtResource("1_0xm2m")
 
 [node name="HUD" parent="." unique_id=997984330 instance=ExtResource("2_h2yge")]
@@ -14,15 +15,8 @@ theme = ExtResource("3_1bvp3")
 [node name="Title" parent="." unique_id=627905547 instance=ExtResource("4_1bvp3")]
 visible = false
 
-[node name="Game" type="MarginContainer" parent="." unique_id=697505199]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("3_1bvp3")
-
 [node name="GameOver" type="MarginContainer" parent="." unique_id=807569813]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -40,3 +34,14 @@ theme_override_constants/shadow_outline_size = 2
 text = "Game Over"
 horizontal_alignment = 1
 uppercase = true
+
+[node name="GameContainer" type="MarginContainer" parent="." unique_id=1689732909]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_1bvp3")
+
+[node name="Game" parent="GameContainer" unique_id=486236418 instance=ExtResource("5_lquwl")]
+layout_mode = 2
