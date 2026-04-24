@@ -5,6 +5,10 @@ enum State { TITLE, PLAYING, GAME_OVER }
 var state: State = State.TITLE
 
 func _ready():
+	var game_size = _get_game_size()
+	var game_config = GameConfig.new(game_size)
+	%HUD.game_config = game_config
+	%Game.game_config = game_config
 	$Title.show()
 	$GameContainer.hide()
 	$GameOver.hide()
@@ -38,3 +42,13 @@ func _on_game_lives_changed(new_value: int) -> void:
 	$HUD.set_lives(new_value)
 	if new_value <= 0:
 		game_over()
+
+func _get_game_size() -> Vector2:
+	var gc: MarginContainer = $GameContainer
+	var margin_top = gc.get_theme_constant("margin_top")
+	var margin_bottom = gc.get_theme_constant("margin_bottom")
+	var margin_left = gc.get_theme_constant("margin_left")
+	var margin_right = gc.get_theme_constant("margin_right")
+	var game_margin_size = \
+		Vector2(margin_left + margin_right, margin_top + margin_bottom)
+	return gc.size - game_margin_size

@@ -1,5 +1,7 @@
 extends MarginContainer
 
+var game_config: GameConfig
+
 func _ready() -> void:
 	pass
 
