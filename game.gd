@@ -15,9 +15,6 @@ func new_game() -> void:
 func game_over() -> void:
 	$FakeDeathTimer.stop()
 	
-func is_playing() -> bool:
-	return is_visible_in_tree() && lives > 0
-
 func _draw() -> void:
 	var from = Vector2(0.0, size.y)
 	var to = Vector2(size.x, size.y)
