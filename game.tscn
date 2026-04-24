@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://b50q6slyw6hhe"]
 
 [ext_resource type="Script" uid="uid://gsbj7vhgqffh" path="res://game.gd" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://darjgb3fu5rx" path="res://player.tscn" id="2_e2o6t"]
 
 [node name="Game" type="Control" unique_id=1798707851]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_80nbo")
 
-[node name="FakeDeathTimer" type="Timer" parent="." unique_id=18591803]
-
-[connection signal="timeout" from="FakeDeathTimer" to="." method="_on_player_died"]
+[node name="Player" parent="." unique_id=2086224386 instance=ExtResource("2_e2o6t")]
+unique_name_in_owner = true

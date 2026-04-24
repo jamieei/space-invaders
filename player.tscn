@@ -14,5 +14,5 @@ texture = ExtResource("2_i3pqv")
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1420581493]
-position = Vector2(32, 49)
+position = Vector2(32, 36)
 shape = SubResource("RectangleShape2D_hqtel")

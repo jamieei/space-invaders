@@ -3,12 +3,12 @@ extends CanvasLayer
 enum State { TITLE, PLAYING, GAME_OVER }
 
 var state: State = State.TITLE
+var game_config: GameConfig
 
 func _ready():
 	var game_size = _get_game_size()
-	var game_config = GameConfig.new(game_size)
+	game_config = GameConfig.new(game_size)
 	%HUD.game_config = game_config
-	%Game.game_config = game_config
 	$Title.show()
 	$GameContainer.hide()
 	$GameOver.hide()
@@ -32,7 +32,7 @@ func new_game() -> void:
 	$Title.hide()
 	$GameContainer.show()
 	$GameOver.hide()
-	%Game.new_game()
+	%Game.new_game(game_config)
 
 func game_over() -> void:
 	state = State.GAME_OVER
