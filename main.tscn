@@ -55,5 +55,4 @@ size_flags_horizontal = 4
 text = "Play Again?"
 uppercase = true
 
-[connection signal="play" from="Title" to="." method="new_game"]
 [connection signal="lives_changed" from="GameContainer/Game" to="." method="_on_game_lives_changed"]
