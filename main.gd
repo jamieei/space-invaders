@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-enum State { TITLE, PLAYING, PAUSED, GAME_OVER }
+enum State { TITLE, PLAYING, GAME_OVER }
 
 var state: State = State.TITLE
 
@@ -19,9 +19,7 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("ui_cancel"):
 		match state:
 			State.PLAYING:
-				pause_game()
-			State.PAUSED:
-				unpause_game()
+				pass
 			_:
 				get_tree().quit()
 	
@@ -36,15 +34,6 @@ func game_over() -> void:
 	state = State.GAME_OVER
 	$GameOver.show()
 	
-func pause_game() -> void:
-	state = State.PAUSED
-	get_tree().paused = true
-	process_mode = Node.PROCESS_MODE_WHEN_PAUSED	
-
-func unpause_game() -> void:
-	state = State.PLAYING
-	get_tree().paused = false
-
 func _on_game_lives_changed(new_value: int) -> void:
 	$HUD.set_lives(new_value)
 	if new_value <= 0:
