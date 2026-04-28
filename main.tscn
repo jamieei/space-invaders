@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bgi21s1hlbsy8"]
 
 [ext_resource type="Script" uid="uid://5a3r26vgwkhp" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://obeg3oaj64qk" path="res://hud.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://obeg3oaj64qk" path="res://ui/hud.tscn" id="2_h2yge"]
 [ext_resource type="Theme" uid="uid://c26vf8jgw5h8e" path="res://theme.tres" id="3_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://8l3c7m8sa6cy" path="res://title.tscn" id="4_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://b50q6slyw6hhe" path="res://game.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://8l3c7m8sa6cy" path="res://ui/title.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b50q6slyw6hhe" path="res://game/game.tscn" id="5_lquwl"]
 
 [node name="Main" type="CanvasLayer" unique_id=875667484]
 script = ExtResource("1_0xm2m")

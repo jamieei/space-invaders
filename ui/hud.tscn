@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://obeg3oaj64qk"]
 
 [ext_resource type="Texture2D" uid="uid://cqgmqn0tprrnv" path="res://assets/laser_canon.png" id="1_0bpsk"]
-[ext_resource type="Script" uid="uid://djhdy35fkxgpk" path="res://hud.gd" id="1_64ctp"]
+[ext_resource type="Script" uid="uid://djhdy35fkxgpk" path="res://ui/hud.gd" id="1_64ctp"]
 
 [node name="MarginContainer" type="MarginContainer" unique_id=997984330]
 anchors_preset = 15

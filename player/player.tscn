@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://darjgb3fu5rx"]
 
-[ext_resource type="Script" uid="uid://iqloroyk4o61" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://iqloroyk4o61" path="res://player/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://cqgmqn0tprrnv" path="res://assets/laser_canon.png" id="2_i3pqv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
