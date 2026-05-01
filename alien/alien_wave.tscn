@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cgh7pfx3ddxt3"]
+
+[ext_resource type="Script" uid="uid://cwh7uk654qxbv" path="res://alien/alien_wave.gd" id="1_dxejo"]
+
+[node name="AlienWave" type="Node2D" unique_id=361065764]
+script = ExtResource("1_dxejo")
